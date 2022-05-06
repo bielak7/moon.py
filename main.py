@@ -1,6 +1,7 @@
 from pywinauto import Application
 import time
 
+# password = input("Podaj hasło: ")
 
 if __name__ == '__main__':
 
@@ -29,4 +30,4 @@ if __name__ == '__main__':
     # print(app2.windows()[0].children())
     # print(app2.windows()[0].children()[0].children())
     # print(app2.windows()[0].children()[0].children()[0].expand())
-    app3 = Application(backend='uia').connect(title="Menu główne")
+    # app3 = Application(backend='uia').connect(title="Menu główne")
