@@ -9,7 +9,7 @@ def login():
 
     app = Application(backend="uia").start("C:\Program Files (x86)\Asseco Poland SA\Platnik\P2Start.exe")  # Kod szukjacy execa
     Window = app.window(title="Aktualizacja Programu Płatnik").wait("visible", timeout=10, retry_interval=1)  # timeout was 20
-    ## TODO Wymyśleć jak czekać na okienka bez sleepa - usunąć wszystkie sleep.
+    ## TODO Wymyśleć jak czekać na okienka bez sleepa - usunąć wszystkie sleep. - może wait untill
     time.sleep(10)  # was 10
     error_dlg = Window.children()[0] ## TODO zamnieć wyszukiwanie po indexie [0] na wyszukiwannie po nazwie/innych atrybutach
     error_dlg.children()[0].click()
